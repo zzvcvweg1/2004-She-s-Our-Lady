@@ -382,4 +382,90 @@ campaignTrail_temp.temp_election_list = [
     }
 ]
 
-campaignTrail_temp.credits = "/u/Retsassin and /u/AMETSFAN"
+campaignTrail_temp.credits = "u/Bernie_El-Sayed"
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#356fbd";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f2c75c";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#d65370";
+
+document.getElementById("header").src = "https://jetsimon.com/public/placeholderbanner.png";
+
+document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#f2c75c!important;}</style>";
+
+let style = document.createElement('style');
+style.type = 'text/css';
+style.id = 'dynamic-style';
+
+style.innerHTML = `
+  .campaign_trail_start_emphasis {
+    background-color: #356fbd;
+  }
+
+  #state_info h3 {
+    background-color: #d65370;
+  }
+
+  #state_result h3 {
+    background-color: #d65370;
+  }
+
+  #overall_result h3 {
+    background-color: #d65370;
+  }
+
+  #map_footer {
+    padding-top: 3em;
+  }
+
+  .overlay_window h3 {
+    background-color: #F2DDE1;
+  }
+
+  .inner_window_question h3 {
+    background-color: #F2DDE1;
+  }
+
+  #overall_result_container {
+    background-color: #F2C75C;
+  }
+
+  #state_result_container {
+    background-color: #F2C75C;
+  }
+
+  #campaign_sign {
+    background-color: #F2C75C;
+    border-color: #214d89;
+  }
+
+  #map_container {
+    background: #F8F8F8;
+    border-radius: 1px;
+    box-shadow:
+      inset 0 0 4px rgba(0, 0, 0, 0.08),
+      0 0 0 2px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+  }
+
+  .overlay_window {
+    height: auto;
+  }
+
+  #menu_container {
+    background-color: #F2C75C !important;
+  }
+
+  a:-webkit-any-link {
+    color: #000000;
+  }
+`;
+
+document.head.appendChild(style);
